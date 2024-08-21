@@ -1,0 +1,911 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+.d-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.py-100 {
+	padding: 100px;
+}
+
+.py-12 {
+	padding: 12px;
+}
+
+.my-50 {
+	margin: 50px;
+}
+
+.my-top-50 {
+	margin-top: 50px;
+}
+
+.w-1 {
+	width: 8.33%;
+}
+
+.w-2 {
+	width: 16.66%
+}
+
+.w-3 {
+	width: 25%
+}
+
+.w-4 {
+	width: 33.33%
+}
+
+.w-5 {
+	width: 41.66%
+}
+
+.w-6 {
+	width: 50%
+}
+
+.w-7 {
+	width: 58.33%
+}
+
+.w-8 {
+	width: 66.66%
+}
+
+.w-9 {
+	width: 75%
+}
+
+.w-10 {
+	width: 83.33%
+}
+
+.w-11 {
+	width: 91.66%
+}
+
+.w-12 {
+	width: 100%
+}
+
+.w-1,
+.w-2,
+.w-3,
+.w-4,
+.w-5,
+.w-6,
+.w-7,
+.w-8,
+.w-9,
+.w-10,
+.w-11,
+.w-12 {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+:root{
+	--primary-color: #ff8700;
+	--secondary-color:#011920;
+	--grey-color:#D6D6D6;
+	--white-color:#fff;
+	--black-color:#000;
+	--fs-14:14px;
+	--fs-16:16px;
+	--fs-18:18px;
+	--fs-20:20px;
+	--fs-24:24px;
+	--fs-30:30px;
+	--fs-48:48px;
+	--fs-70:70px;
+	--fw-100:100;
+	--fw-200:200;
+	--fw-300:300;
+	--fw-400:400;
+	--fw-500:500;
+	--fw-600:600;
+	--fw-700:700;
+	--fw-800:800;
+	--fw-900:900;
+    --font-family: 'Just Another Hand';
+	--rubik:'rubik';
+}
+/* header-start */
+header {
+	background-color: var(--secondary-color);
+	padding: 15px;
+	text-transform: capitalize;
+}
+.logo {
+	text-align: center;
+}
+header .menu ul li {
+	padding: 10px 10px;
+	position: relative;
+}
+.menu ul li a {
+	padding: 10px 29px;
+	color: var(--white-color);
+	font-family: Thicccboi, sans-serif;
+	font-size: var(--fs-18);
+}
+header .menu ul li:hover a {
+	color:var(--primary-color);
+}
+ul li {
+	list-style:none ;
+}
+a {
+	text-decoration: none;
+}
+.dropdown {
+	position: absolute;
+	content: '';
+	display: none;
+	width: 270px;
+	top:50px;
+	background-color: var(--secondary-color);
+	color:var(--white-color);
+	visibility: hidden;
+}
+.dropdown ul li a {
+	color:var(--secondary-color);
+}
+.content:hover .dropdown {
+	visibility: visible;
+	display: block;
+	background-color: var(--white-color);
+	color:var(--secondary-color);
+}
+/* header-end */
+/* banner-start */
+.banner {
+	padding-top: 300px;
+	background-image: url(../image/63fc8f011df7042b653ee41c_hero-image-1-1.jpg);
+	height: 950px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.banner h3 {
+	font-size: var(--fs-30);
+	font-family: var(--font-family);
+	color:var(--primary-color);
+}
+.banner h1 {
+	font-size: var(--fs-70);
+	color: var(--white-color);
+	font-family: var(--rubik);
+	margin-bottom: 45px;
+}
+.banner p {
+	color: var(--white-color);
+	font-size: var(--fs-20);
+	font-family: var(--rubik);
+	margin-bottom: 60px;
+}
+.banner span {
+	color: var(--primary-color);
+	text-decoration: underline;
+}
+.banner .banner-content button {
+	padding: 15px 38px 15px 38px;
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+	border-color: var(--white-color);
+	background-color: var(--secondary-color);
+	color:var(--white-color);
+	text-transform: capitalize;
+}
+.banner .banner-content:hover button {
+	background-color: var(--primary-color);
+	cursor: pointer;
+}
+/* banner-end */
+/* food-start */
+.food {
+	padding-top: 100px;
+	background-color: var(--secondary-color);
+}
+.food span {
+	color: var(--primary-color);
+	font-size: var(--fs-20);
+	font-family: var(--font-family);
+	margin: 20px 0px;
+}
+.food h1 {
+	color: #fff;
+	font-size: var(--fs-48);
+	font-family: var(--rubik);
+	margin: 35px 0px;
+}
+.food p {
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+	color: var(--white-color);
+	margin: 0px 0px 25px 0px;
+}
+.food h3 {
+	font-size: var(--fs-20);
+	font-family: var(--rubik);
+	color: var(--white-color);
+	margin: 0px 0px 45px 0px;
+}
+.food h3 a {
+	color: var(--primary-color);
+	font-size: var(--fs-20);
+	text-decoration: underline;
+}
+.food .button button {
+	padding: 15px 38px 15px 38px;
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+	border-color: var(--white-color);
+	background-color: var(--secondary-color);
+	color:var(--white-color);
+	text-transform: capitalize;
+}
+.food .button:hover button {
+	background-color: var(--primary-color);
+	cursor: pointer;
+}
+/* food-end */
+/* poster-start */
+.poster {
+	background-color: var(--secondary-color);
+	padding: 100px 0px;
+}
+/* poster-end */
+/* menu-start */
+.price {
+	background-color: var(--secondary-color);
+	text-align: center;
+	padding: 140px 0px;
+}
+.price span {
+	color: var(--primary-color);
+	font-size: var(--fs-20);
+	font-family: var(--font-family);
+	margin: 0px 0px 20px 0px;
+}
+.price h1 {
+	color: var(--white-color);
+	font-size: var(--fs-48);
+	font-family: var(--rubik);
+	margin: 0px 0px 50px 0px;
+}
+.price .fast button {
+	padding: 10px 30px;
+	text-transform: capitalize;
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+	background-color: transparent;
+	margin-right: 20px;
+}
+.price .break button {
+	padding: 10px 30px;
+	text-transform: capitalize;
+	color: var(--white-color);
+	border-color: var(--white-color);
+	background-color: transparent;
+	margin-right: 20px;
+	margin-bottom: 80px;
+}
+.price h3 {
+	color: var(--white-color);
+	font-size: 24px;
+	font-family: var(--rubik);
+}
+.price h3 span {
+	color: var(--white-color);
+	background-color: var(--primary-color);
+	padding: 3px 6px;
+	font-size: 14px;
+	font-family: var(--rubik);
+}
+.price p {
+	color: var(--grey-color);
+	font-size: 16px;
+	font-family: var(--rubik);
+	margin: 15px 0px 0px 0px;
+}
+.product {
+	padding-bottom: 40px;
+}
+.icon-image img{
+	padding-left: 600px;
+}
+/* menu-end */
+/* quality-start */
+.quality {
+	background-color: var(--secondary-color);
+}
+.quality .food-image img {
+	max-width: 100%;
+}
+.quality .food-content {
+	margin: 0px 0px 70px 0px;
+}
+.quality .food-content span {
+	color: var(--primary-color);
+	font-size: var(--fs-20);
+	font-family: var(--font-family);
+	margin: 0px 0px 20px 0px;
+}
+.quality .food-content h1 {
+	color: var(--white-color);
+	font-size: var(--fs-48);
+	font-family: var(--rubik);
+	background-image: url(../image/63d7939a153399368659e811_title-design\ \(1\).png);
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+}
+.quality h4 {
+	color: var(--white-color);
+	font-size: var(--fs-24);
+	font-family: var(--rubik);
+	margin: 0px 0px 20px 0px;
+}
+.quality p {
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+}
+/* quality-end */
+/* booking-start */
+.booking {
+	background-color: var(--secondary-color);
+}
+.booking-image img{
+	width: 100%;
+}
+.booking-content {
+	padding: 50px;
+}
+.booking-content span{
+	color: var(--primary-color);
+	font-size: var(--fs-20);
+	font-family: var(--font-family);
+	margin: 0px 0px 20px 0px;
+	font-weight: 100;
+}
+.booking-content h1 {
+	color: var(--white-color);
+	font-size: var(--fs-48);
+	font-family: var(--rubik);
+	margin: 0px 0px 35px 0px;
+	font-weight: 300;
+}
+.booking-content p {
+	color: var(--white-color);
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+}
+.booking-content p a {
+	color: var(--primary-color);
+	text-decoration: underline;
+	font-size: var(--fs-20);
+	font-family: var(--rubik);
+	margin-left: 5px;
+}
+.event-booking {
+	padding: 30px 80px 0px 30px;
+	color: var(--white-color);
+	font-weight: 100;
+}
+.booking-day h5 {
+	color: var(--primary-color);
+	font-weight: 100;
+}
+.event-booking h3 {
+	font-size: var(--fs-24);
+	font-family: var(--rubik);
+	margin: 0px 0px 20px 0px;
+}
+.event-booking h5 {
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 0px 0px 20px 0px;
+}
+.event-booking .booking-button button {
+	padding: 20px 50px;
+	text-transform: capitalize;
+	background-color: transparent;
+	color: var(--white-color);
+	border-color: var(--white-color);
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+	margin: 50px 0px 0px 0px;
+}
+.event-booking .booking-button:hover button {
+	background-color: var(--primary-color);
+	cursor: pointer;
+}
+/* booking-end */
+/* review-start */
+.review {
+	background-color: #001118;
+	padding:140px 0px;
+	text-align: center;
+}
+.review span {
+	color: var(--primary-color);
+	font-size: var(--fs-20);
+	font-family: var(--font-family);
+	margin: 0px 0px 20px 0px;
+}
+.review h1 {
+	color: var(--white-color);
+	font-size: var(--fs-48);
+	font-family: var(--rubik);
+	margin: 0px 0px 75px 0px;
+}
+.review-box {
+	background-color: var(--secondary-color);
+	padding: 30px 30px 50px 30px;
+}
+.review-box p {
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 0px 0px 25px 0px;
+}
+.client-image img {
+	border-radius: 50%;
+	padding: 15px;
+	border: 1px solid #353535;
+}
+.review-icon .about i {
+	color: var(--white-color);
+	padding: 30px 5px;
+	font-size: 13px;
+}
+.review-icon .test i {
+	color: #ffffff66;
+	padding: 30px 5px;
+	font-size: 13px;
+}
+/* review-end */
+/* blog-start */
+.blog {
+	background-color: var(--secondary-color);
+	text-align: center;
+	padding: 140px 0px;
+	position: relative;
+}
+.blog-image {
+	background-color: #03171e;
+}
+.blog span {
+	color: var(--primary-color);
+	font-size: var(--fs-20);
+	font-family: var(--font-family);
+	margin: 0px 0px 20px 0px;
+}
+.blog h1 {
+	color: var(--white-color);
+	font-size: var(--fs-48);
+	font-family: var(--rubik);
+	margin: 0px 0px 75px 0px;
+}
+.blog-content {
+	padding: 20px 22px 30px 25px;
+}
+.blog-content span {
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+}
+.blog-content h4 {
+	padding: 0px 10px;
+}
+.blog-content h2 {
+	color: var(--white-color);
+	font-size: var(--fs-24);
+	font-family: var(--rubik);
+	padding: 0px 0px 10px 0px;
+}
+.blog-content a {
+	color: var(--grey-color);
+	font-size: var(--fs-14);
+	font-family: var(--rubik);
+}
+.blog-content i {
+	width: 20px;
+	height: 10px;
+	color: var(--white-color);
+	padding-left: 5px;
+}
+.blog-content:hover a {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.blog-content:hover i {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.blogger-content {
+	background-color: #03171e;
+	padding: 20px 22px 30px 25px;
+}
+.blogger-content span {
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+}
+.blogger-content h4 {
+	padding: 0px 10px;
+}
+.blogger-content h2 {
+	color: var(--white-color);
+	font-size: var(--fs-24);
+	font-family: var(--rubik);
+	padding: 0px 0px 10px 0px;
+}
+.blogger-content a {
+	color: var(--grey-color);
+	font-size: var(--fs-14);
+	font-family: var(--rubik);
+}
+.blogger-content i {
+	width: 20px;
+	height: 10px;
+	color: var(--white-color);
+	padding-left: 5px;
+}
+.blogger-content:hover a {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.blogger-content:hover i {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.vlog-content {
+	background-color: #03171e;
+	padding: 20px 22px 30px 25px;
+}
+.vlog-content span {
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+}
+.vlog-content h4 {
+	padding: 0px 10px;
+}
+.vlog-content h2 {
+	color: var(--white-color);
+	font-size: var(--fs-24);
+	font-family: var(--rubik);
+	padding: 0px 0px 10px 0px;
+}
+.vlog-content a {
+	color: var(--grey-color);
+	font-size: var(--fs-14);
+	font-family: var(--rubik);
+}
+.vlog-content i {
+	width: 20px;
+	height: 10px;
+	color: var(--white-color);
+	padding-left: 5px;
+}
+.vlog-content:hover a {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.vlog-content:hover i {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+/* blog-end */
+/* best-food-start */
+.Best-food {
+	background-color: var(--secondary-color);
+}
+.best-food-image img{
+	width: 100%;
+	height: 100%;
+}
+.best-food-content {
+	text-align: center;
+}
+.best-food-content span {
+	color: var(--primary-color);
+	font-size: var(--fs-20);
+	font-family: var(--font-family);
+	margin: 0px 0px 10px 0px;
+}
+.best-food-content h1 {
+	color: var(--white-color);
+	font-size: var(--fs-48);
+	font-family: var(--rubik);
+	margin: 0px 0px 20px 0px;
+}
+.best-food-content p {
+	color: var(--white-color);
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+	margin: 0px 0px 40px 80px;
+}
+.best-food-content input {
+	background-color: transparent;
+	color: var(--white-color);
+	border-color: var(--white-color);
+	margin: 0px 0px 10px 0px;
+	padding: 20px 120px 20px 20px;
+	text-transform: capitalize;
+	width: 75%;	
+}
+.best-food-content .subscribe-button button {
+	background-color: var(--white-color);
+	color: #393939;
+	margin: 2px 0px 0px -120px;
+	padding: 15px 15px;
+	text-transform: capitalize;
+	font-size: var(--fs-18);
+}
+.best-food-content .subscribe-button:hover button {
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	cursor: pointer;
+}
+.best-food-content .number p {
+	color: var(--white-color);
+	font-size: var(--fs-20);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 80px;
+}
+.best-food-content p a {
+	color: var(--primary-color);
+	font-size: var(--fs-20);
+	font-family: var(--rubik);
+	text-decoration: underline;
+}
+/* best-food-end */
+/* footer-start */
+footer {
+	background-color: var(--secondary-color);
+	padding: 140px 0px;
+}
+.footer-logo {
+	color: var(--white-color);
+}
+.footer-logo img {
+	padding: 0px 0px 35px 0px;
+}
+.footer-logo p {
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+	margin: 0px 0px 25px 0px;
+}
+.footer-logo .footer-icon .facebook i{
+	border: 1px solid var(--grey-color);
+	padding: 5px;
+	border-radius: 50%;
+	margin: 0px 10px 50px 0px;
+}
+.footer-logo .footer-icon .facebook:hover i {
+	background-color: var(--white-color);
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-logo .footer-icon .twitter i{
+	border: 1px solid var(--grey-color);
+	padding: 5px;
+	border-radius: 50%;
+	margin: 0px 10px 50px 0px;
+}
+.footer-logo .footer-icon .twitter:hover i {
+	background-color: var(--white-color);
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-logo .footer-icon .instagram i{
+	border: 1px solid var(--grey-color);
+	padding: 5px;
+	border-radius: 50%;
+	margin: 0px 10px 50px 0px;
+}
+.footer-logo .footer-icon .instagram:hover i {
+	background-color: var(--white-color);
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-logo .footer-icon .whatsapp i{
+	border: 1px solid var(--grey-color);
+	padding: 5px;
+	border-radius: 50%;
+	margin: 0px 10px 50px 0px;
+}
+.footer-logo .footer-icon .whatsapp:hover i {
+	background-color: var(--white-color);
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+.footer-content h1 {
+	font-size: var(--fs-24);
+	font-family: var(--rubik);
+	color: var(--white-color);
+	margin: 0px 0px 35px 0px;
+}
+.footer-content .about h4{
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 0px;
+}
+.footer-content .about:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-content .menu h4{
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 0px;
+}
+.footer-content .menu:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-content .table h4{
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 0px;
+}
+.footer-content .table:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-content .post h4{
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 0px;
+}
+.footer-content .post:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-content .contact h4{
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 0px;
+}
+.footer-content .contact:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-information h1 {
+	font-size: var(--fs-24);
+	font-family: var(--rubik);
+	color: var(--white-color);
+	margin: 0px 0px 35px 0px;
+}
+.footer-information .about h4{
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 0px;
+}
+.footer-information .about:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-information .menu h4{
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 0px;
+}
+.footer-information .menu:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-information .table h4{
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 0px;
+}
+.footer-information .table:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-information .post h4{
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 0px;
+}
+.footer-information .post:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-information .contact h4{
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	margin: 20px 0px 0px 0px;
+}
+.footer-information .contact:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-contact h1{
+	font-size: var(--fs-24);
+	font-family: var(--rubik);
+	color: var(--white-color);
+	margin: 0px 0px 35px 0px;
+}
+.footer-contact p {
+	font-size: var(--fs-18);
+	font-family: var(--rubik);
+	color:var(--white-color);
+	margin: 0px 0px 25px 0px;
+}
+.footer-contact .info h4 {
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	padding: 0px 0px 10px 0px;
+}
+.footer-contact .info:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-contact .admin h4 {
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+	padding: 0px 0px 20px 0px;
+}
+.footer-contact .admin:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-contact .telephone h4 {
+	color: var(--white-color);
+	font-size: var(--fs-16);
+	font-family: var(--rubik);
+}
+.footer-contact .telephone:hover h4 {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+/* footer-end */
